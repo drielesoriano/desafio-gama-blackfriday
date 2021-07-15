@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Driele Soriano">
+  <meta name="description" content="Landing Page com temática de Black Friday para o Desafio #1 Hiring Coders">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="app/css/style.css">
+  <title>Black Friday - Desafio #1 | Hiring Coders</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="container flex flex-jc--sb flex-ai--c">
+      <a href="/" class="header__logo">
+        <img src="assets/images/logo.svg" alt="logo"/>
+      </a>
+
+      <a href="#" class="header__toggle hide-desktop" title="menu">
+        <i id="menu-toggle" class="uil uil-bars header__toggle-icon"></i>
+        <i id="menu-toggle-close" class="uil uil-times header__toggle-icon hiden"></i>
+        <!--<span></span>
+        <span></span>
+        <span></span>-->
+      </a>
+
+      <div id="header__links" class="header__links hide-mobile">
+        <a href="/">
+          <i class="uil uil-estate header__links--icon"></i>Início
+        </a>
+        <a href="#">
+          <i class="uil uil-store header__links--icon"></i>Nossas Lojas
+        </a>
+        <a href="#">
+          <i class="uil uil-envelope header__links--icon"></i>Atendimento
+        </a>
+      </div>
+      <div class="header__user-area hide-mobile">
+
+        <a href="#" title="perfil usuário">
+          <i class="uil uil-user header__links--icon"></i>
+        </a>
+
+        <a href="#" title="carrinho de compras">
+          <i class="uil uil-shopping-bag header__links--icon"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div id="header-menu" class="header__menu container hide hide-desktop">
+      <a href="/">
+        <i class="uil uil-estate header__links--icon"></i>Início
+      </a>
+      <a href="#">
+        <i class="uil uil-store header__links--icon"></i>Nossas Lojas
+      </a>
+      <a href="#">
+        <i class="uil uil-envelope header__links--icon"></i>Atendimento
+      </a>
+
+      <div class="header__menu-user">
+        <a href="#">
+          <i class="uil uil-user header__links--icon"></i> Login
+        </a>
+        <a href="#" title="carrinho de compras">
+          <i class="uil uil-shopping-bag header__links--icon"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero__container">
+      <div class="hero__text">
+        <h1>Black Friday</h1>
+        <h3>Descontos de até 70%!</h3>
+
+        <p>Cadastre seu e-mail e fique sabendo das
+          nossas ofertas em primeira mão.</p>
+      </div>
+
+      <form id="hero-cta" class="hero__cta flex">
+          <input type="email" name="email" id="email" placeholder="E-mail">
+        <a href="#" id="submit" class="button" onclick="saveEmail()">Enviar</a>
+      </form>
+      <span class="message" id="message"></span>
+    </div>
+
+    <div class="hero__img">
+      <img src="assets/images/shopping-cuate.svg" alt="" />
+    </div>
+  </section>
+
+  <section class="container card">
+    <div class="card__content">
+      <h2>Seja o primeiro</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio pariatur quibusdam optio porro deserunt consequatur maiores?</p>
+    </div>
+    <div class="card__content">
+      <h2>Ofertas exclusivas</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio pariatur quibusdam optio porro deserunt consequatur maiores?</p>
+    </div>
+    <div class="card__content">
+      <h2>Pagamento ágil</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio pariatur quibusdam optio porro deserunt consequatur maiores?</p>
+    </div>
+    <div class="card__content">
+      <h2>Entrega Rápida</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio pariatur quibusdam optio porro deserunt consequatur maiores?</p>
+    </div>
+  </section>
+
+  <footer class="footer flex">
+    <a href="/" class="footer__logo">
+      <img src="assets/images/logo.svg" alt="logo"/>
+    </a>
+
+    <div class="footer__links">
+      <a href="/">
+        <i class="uil uil-estate header__links--icon"></i>Início
+      </a>
+      <a href="#">
+        <i class="uil uil-store header__links--icon"></i>Nossas Lojas
+      </a>
+      <a href="#">
+        <i class="uil uil-envelope header__links--icon"></i>Atendimento
+      </a>
+    </div>
+
+    <span>
+      Desenvolvido por Driele Soriano para o Desafio  #1 do Hiring Coders | Gama Academy e VTEX
+    <span>
+  </footer>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>

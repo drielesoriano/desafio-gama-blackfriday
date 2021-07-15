@@ -1,0 +1,34 @@
+.card {
+
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 3rem;
+
+  @include breakpoint-up(mediumLarge) {
+    display: flex;
+    flex: wrap;
+  }
+
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $darkyellow;
+  }
+
+  &__content {
+    width: 100%;
+    height: auto;
+    background-color: hsla(192, 7, 27, .2);
+    padding: 2.5rem 1.875rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+
+    p {
+      font-size: 0.8375rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+}
